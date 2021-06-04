@@ -4,3 +4,4 @@ let  pokemonList = [{name:  "Bulbasaur",  height: 0.7,  types:  ['grass', 'poiso
                     {name:  "Slowpoke", height: 1.2,  types: ['psychic', 'water']}];
 
 console.log(pokemonList);
+//ends here 
