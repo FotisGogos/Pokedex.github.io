@@ -1,1 +1,1 @@
-# simple-js-app
+# Pokédex JavaScript App
