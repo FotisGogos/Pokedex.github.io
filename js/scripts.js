@@ -20,7 +20,11 @@ let pokemonRepository = (function () {
                         {name:  "Slowpoke", height: 1.2,  types: ['psychic', 'water']}];
 
   function add(item) {
-    pokemonList.push(item);
+    if(typeof item === 'object'){
+      pokemonList.push(item);
+    }else{
+      console.log("Invalid Pokemon. Please give an object.")
+    }
   }
 
   function getAll() {
@@ -34,7 +38,12 @@ let pokemonRepository = (function () {
 })();
 
 pokemonList = pokemonRepository.getAll()
-
 pokemonList.forEach(function(pokemon) {
   console.log(pokemon.name + pokemon.height );
 });
+
+console.log(pokemonRepository.getAll())
+pokemonRepository.add({name: "Mew", height: 1.3, types: [ "poison" ]});
+console.log(pokemonRepository.getAll())
+pokemonRepository.add("asd");
+console.log(pokemonRepository.getAll())
