@@ -5,9 +5,10 @@
 }
 
 body {
-  background-color: lightgoldenrodyellow;
   font-family: "Playfair", sans-serif;
   font-size: 15px;
+  width: 100%;
+  line-height: 1.6;
 }
 
 h1 {
@@ -20,83 +21,42 @@ h1 {
 .Pokemon__landscape {
   display: flex;
   align-items: center;
-  width: 400px;
+  width: 230px;
   margin: auto;
+  position: relative;
+  bottom: 20px;
 }
 
-.button-class {
-  background-color: lightblue;
-  padding: 16px 32px;
-  text-decoration: none;
-  font-size: 22px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  color: black;
-  border: 4px solid lightgray;
+.navbar {
+  background-color: #2b8786;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 12;
+  height: 125px;
+  bottom: 15px; 
+  b
+}
+
+.btn-outline-success {
+  color: #000000;
+  border-color: #000000	;
+}
+
+.list-group-item {
+  background-color: #98c717;
+  top: 125px;
   text-align: center;
-  width: 500px;
+  position: relative;
+}
+
+.list-group {
   text-transform: capitalize;
 }
 
-.pokemon-list {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.button-class:hover {
-  cursor: pointer;
-}
-
-#modal-container {
-  display: none;
-}
-
-#modal-container.is-visible {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-
-  /* to show it above other content */
-  z-index: 999;
-
-  /* to allow scrolling if the screen is not high enough*/
-  overflow: auto;
-
-  /* this is used to center the modal */
-  display: grid;
-  text-align: center;
-}
-
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 10px;
-  width: 100%;
-  max-width: 900px;
-  text-align: center;
-}
-
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
-}
-
-.modal h1 {
-  margin-top: 0;
-}
-
-.modal p {
-  margin-bottom: 0;
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-size: 16px;
 }
