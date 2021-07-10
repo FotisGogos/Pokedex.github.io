@@ -9,6 +9,7 @@ body {
   font-size: 15px;
   width: 100%;
   line-height: 1.6;
+  background-color: rgb(36, 218, 127);
 }
 
 h1 {
@@ -20,7 +21,6 @@ h1 {
 
 .Pokemon__landscape {
   display: flex;
-  align-items: center;
   width: 230px;
   margin: auto;
   position: relative;
@@ -34,29 +34,88 @@ h1 {
   width: 100%;
   z-index: 12;
   height: 125px;
-  bottom: 15px; 
-  b
-}
-
-.btn-outline-success {
-  color: #000000;
-  border-color: #000000	;
+  bottom: 15px;
 }
 
 .list-group-item {
-  background-color: #98c717;
+  background-color: white;
   top: 125px;
   text-align: center;
   position: relative;
+  display: inline-block;
+  border: none;
+  border: 2px solid green;
+  margin: 4px 6px;
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
 
-.list-group {
+button.btn.btn-block {
   text-transform: capitalize;
 }
 
 .btn {
-  border: 2px solid black;
   background-color: white;
   color: black;
   font-size: 16px;
+}
+
+/* Style the search field */
+form.search-bar input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.search-bar button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.search-bar button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.search-bar ::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media all and (max-width: 705px) {
+  .navbar {
+    display: block;
+  }
+}
+
+@media (max-width: 705px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+  }
+
+  #search-bar {
+    position: relative;
+    bottom: 25px;
+  }
+}
+
+@media (max-width: 705px) {
+  .list-group-item {
+    top: 200px;
+  }
 }
