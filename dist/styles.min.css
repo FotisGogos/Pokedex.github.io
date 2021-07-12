@@ -1,1 +1,98 @@
-*{margin:0;padding:0}body{font-family:Playfair,sans-serif;font-size:15px;width:100%;line-height:1.6;background-color:#24da7f}h1{font-family:Playfair sans-serif;font-size:30px;text-align:center;margin-top:20px}.Pokemon__landscape{display:flex;width:230px;margin:auto;position:relative;bottom:20px}.navbar{background-color:#2b8786;position:fixed;top:0;width:100%;z-index:12;height:125px;bottom:15px}.list-group-item{background-color:#fff;top:125px;text-align:center;position:relative;display:inline-block;border:none;border:2px solid green;margin:4px 6px;cursor:pointer;transition-duration:.4s}button.btn.btn-block{text-transform:capitalize}.btn{background-color:#fff;color:#000;font-size:16px}form.search-bar input[type=text]{padding:10px;font-size:17px;border:1px solid grey;float:left;width:80%;background:#f1f1f1}form.search-bar button{float:left;width:20%;padding:10px;background:#2196f3;color:#fff;font-size:17px;border:1px solid grey;border-left:none;cursor:pointer}form.search-bar button:hover{background:#0b7dda}form.search-bar ::after{content:"";clear:both;display:table}@media all and (max-width:705px){.navbar{display:block}}@media (max-width:705px){.navbar{display:flex;align-items:center;justify-content:center;top:0}#search-bar{position:relative;bottom:25px}}@media (max-width:705px){.list-group-item{top:200px}}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Playfair, sans-serif;
+  font-size: 15px;
+  width: 100%;
+  line-height: 1.6;
+  background-color: #24da7f;
+}
+h1 {
+  font-family: Playfair sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+.Pokemon__landscape {
+  display: flex;
+  width: 230px;
+  margin: auto;
+  position: relative;
+  bottom: 20px;
+}
+.navbar {
+  background-color: #2b8786;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 12;
+  height: 125px;
+  bottom: 15px;
+}
+.list-group-item {
+  background-color: #fff;
+  top: 125px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  border: none;
+  border: 2px solid green;
+  margin: 4px 6px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+button.btn.btn-block {
+  text-transform: capitalize;
+}
+.btn {
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+}
+form.search-bar input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+form.search-bar button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196f3;
+  color: #fff;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+form.search-bar button:hover {
+  background: #0b7dda;
+}
+form.search-bar ::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media all and (max-width: 705px) {
+  .navbar {
+    display: block;
+  }
+}
+@media (max-width: 705px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+  }
+}
+@media (max-width: 705px) {
+  .list-group-item {
+    top: 200px;
+  }
+}
