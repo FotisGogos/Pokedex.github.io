@@ -107,11 +107,6 @@ form.search-bar ::after {
     justify-content: center;
     top: 0px;
   }
-
-  #search-bar {
-    position: relative;
-    bottom: 25px;
-  }
 }
 
 @media (max-width: 705px) {
